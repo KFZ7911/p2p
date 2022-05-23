@@ -1,6 +1,7 @@
 package com.xmg.p2p.base.mapper;
 
 import com.xmg.p2p.base.domain.Logininfo;
+
 import java.util.List;
 
 public interface LogininfoMapper {
@@ -13,4 +14,6 @@ public interface LogininfoMapper {
     List<Logininfo> selectAll();
 
     int updateByPrimaryKey(Logininfo record);
+
+    int queryCountByUsername(String username);
 }

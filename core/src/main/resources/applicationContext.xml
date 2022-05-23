@@ -16,7 +16,7 @@
 	<context:component-scan base-package="com.xmg.p2p"/>
 
     <!--2：加载外部资源-->
-    <context:property-placeholder location="classpath:db.properties,classpath:sms.properties,classpath:mail.properties"/>
+    <context:property-placeholder location="classpath:db.properties"/>
     
     <!--3：配置dataSource-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
