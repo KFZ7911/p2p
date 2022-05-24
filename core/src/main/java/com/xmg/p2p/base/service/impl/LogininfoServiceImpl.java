@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @author sus
  * @create 2022-05-23 21:06
  */
-@Service("logininfoService")
+@Service
 public class LogininfoServiceImpl implements LogininfoService {
 
     @Autowired
@@ -33,5 +33,10 @@ public class LogininfoServiceImpl implements LogininfoService {
         logininfo.setState(Logininfo.STATE_NORMAL);
 
         logininfoMapper.insert(logininfo);
+    }
+
+    @Override
+    public boolean checkUsername(String username) {
+        return logininfoMapper.queryCountByUsername(username) > 0;
     }
 }

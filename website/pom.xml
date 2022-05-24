@@ -40,6 +40,11 @@
       <groupId>javax.servlet</groupId>  
       <artifactId>servlet-api</artifactId>  
       <scope>provided</scope> 
-    </dependency> 
+    </dependency>
+    <dependency>
+      <groupId>com.xmg</groupId>
+      <artifactId>core</artifactId>
+      <version>1.0.0</version>
+    </dependency>
   </dependencies> 
 </project>
